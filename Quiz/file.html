@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <h1>Interactive Quiz</h1>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="quiz-content">
+            <h2 id="question">Question Text</h2>
+            <span id="timer">30</span>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer D</label>
+                </li>
+            </ul>
+            <div class="buttons">
+                <button id="previous" style="display: none;">Previous</button>
+                <button id="next">Next</button>
+                <button id="submit" style="display: none;">Submit</button>
+            </div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2 id="score"></h2>
+            <button onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
